@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NANO-CARIOMATRIX | Smart-Gummy Anti Karies</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0ea5e9', // Sky blue untuk kesan medis/gigi
+                        secondary: '#10b981', // Emerald green untuk kesan alam/organik
+                        dark: '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #0ea5e9, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-color: #f0f9ff;
+            background-image: radial-gradient(#e0f2fe 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 antialiased bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <i class="fa-solid fa-tooth text-3xl text-primary"></i>
+                    <span class="font-bold text-2xl tracking-tight text-dark">NANO-<span class="text-primary">CARIOMATRIX</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-gray-600 hover:text-primary font-medium transition">Beranda</a>
+                    <a href="#masalah" class="text-gray-600 hover:text-primary font-medium transition">Urgensi</a>
+                    <a href="#inovasi" class="text-gray-600 hover:text-primary font-medium transition">Inovasi</a>
+                    <a href="#mekanisme" class="text-gray-600 hover:text-primary font-medium transition">Mekanisme Kerja</a>
+                    <a href="#dampak" class="text-gray-600 hover:text-primary font-medium transition">Dampak</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="#inovasi" class="bg-primary hover:bg-sky-600 text-white px-6 py-2.5 rounded-full font-semibold shadow-lg shadow-sky-200 transition transform hover:-translate-y-0.5">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-bg pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left z-10">
+                    <div class="inline-block bg-green-100 text-green-700 px-4 py-1.5 rounded-full font-semibold text-sm mb-6 border border-green-200 shadow-sm">
+                        <i class="fa-solid fa-leaf mr-2"></i> Inovasi Biofarmasi Masa Depan
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dark leading-tight mb-6">
+                        Perlindungan Gigi Presisi <br>
+                        <span class="gradient-text">Tanpa Risiko Toksisitas</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Smart-Gummy anak berbasis nano-enkapsulasi. Memadukan kekuatan alam dari <span class="font-semibold text-dark">Lektin Biji Nangka</span> dan <span class="font-semibold text-dark">Teobromin Kulit Kakao</span> untuk senyum sehat generasi Indonesia Emas 2045.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <a href="#inovasi" class="bg-primary text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-sky-300 hover:shadow-2xl hover:bg-sky-600 transition duration-300">
+                            Lihat Inovasi
+                        </a>
+                        <a href="#masalah" class="bg-white text-gray-700 border border-gray-200 px-8 py-4 rounded-full font-bold text-lg shadow-sm hover:bg-gray-50 transition duration-300 flex items-center justify-center">
+                            <i class="fa-solid fa-play-circle text-primary mr-2"></i> Kenapa Penting?
+                        </a>
+                    </div>
+                </div>
+                <div class="relative z-10 mx-auto w-full max-w-lg lg:max-w-none">
+                    <!-- GAMBAR HERO: Ganti hero_image.png dengan gambar mock-up botol/gummy -->
+                    <img src="hero_image.png" alt="Produk Nano-Cariomatrix" class="w-full h-auto drop-shadow-2xl rounded-2xl transform hover:scale-105 transition duration-500" onerror="this.src='https://placehold.co/600x500/0ea5e9/ffffff?text=hero_image.png'">
+                    
+                    <!-- Decorative Elements -->
+                    <div class="absolute -top-6 -right-6 bg-white p-4 rounded-2xl shadow-xl animate-bounce">
+                        <i class="fa-solid fa-shield-virus text-3xl text-primary"></i>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl animate-bounce" style="animation-delay: 1s;">
+                        <i class="fa-solid fa-tooth text-3xl text-secondary"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgensi (Masalah) Section -->
+    <section id="masalah" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-primary font-bold tracking-wide uppercase mb-2">Mengapa Kita Membutuhkan Ini?</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-dark mb-4">Ancaman Nyata Dibalik Senyum Anak Indonesia</h3>
+                <p class="text-gray-600 text-lg">Metode konvensional saat ini memiliki celah klinis yang membahayakan tumbuh kembang anak dan lingkungan kita.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Masalah 1 -->
+                <div class="bg-red-50 rounded-2xl p-8 border border-red-100 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-red-100 text-red-500 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-chart-line down"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-3">Krisis Karies Pediatrik</h4>
+                    <p class="text-gray-600 mb-4">Jutaan bakteri <i>S. mutans</i> merusak struktur gigi secara diam-diam. Hal ini mengganggu penyerapan nutrisi dan kognitif anak.</p>
+                    <!-- GAMBAR: karies_anak.png -->
+                    <img src="karies_anak.png" alt="Ilustrasi Karies" class="w-full h-40 object-cover rounded-lg" onerror="this.src='https://placehold.co/400x200/fee2e2/ef4444?text=karies_anak.png'">
+                </div>
+                <!-- Masalah 2 -->
+                <div class="bg-orange-50 rounded-2xl p-8 border border-orange-100 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-orange-100 text-orange-500 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-skull-crossbones"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-3">Bahaya Metode Konvensional</h4>
+                    <p class="text-gray-600 mb-4">Fluoride topikal memicu risiko toksisitas sistemik bila tertelan. Agen antibakteri kasar memicu resistensi patogen.</p>
+                    <!-- GAMBAR: bahaya_fluoride.png -->
+                    <img src="bahaya_fluoride.png" alt="Ilustrasi Toksisitas" class="w-full h-40 object-cover rounded-lg" onerror="this.src='https://placehold.co/400x200/ffedd5/f97316?text=bahaya_fluoride.png'">
+                </div>
+                <!-- Masalah 3 -->
+                <div class="bg-yellow-50 rounded-2xl p-8 border border-yellow-100 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-yellow-100 text-yellow-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-dumpster"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-dark mb-3">Limbah Agraris Terbuang</h4>
+                    <p class="text-gray-600 mb-4">Jutaan ton limbah kulit kakao dan biji nangka di Indonesia terabaikan, padahal menyimpan senyawa biokimia luar biasa.</p>
+                    <!-- GAMBAR: limbah_pertanian.png -->
+                    <img src="limbah_pertanian.png" alt="Limbah Pertanian" class="w-full h-40 object-cover rounded-lg" onerror="this.src='https://placehold.co/400x200/fef3c7/d97706?text=limbah_pertanian.png'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inovasi Section -->
+    <section id="inovasi" class="py-24 bg-dark text-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary opacity-20 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-secondary opacity-20 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <!-- GAMBAR: struktur_nano.png -->
+                    <img src="struktur_nano.png" alt="Struktur Nano Enkapsulasi" class="w-full h-auto rounded-2xl shadow-2xl border border-gray-700" onerror="this.src='https://placehold.co/600x600/1e293b/0ea5e9?text=struktur_nano.png'">
+                </div>
+                <div>
+                    <h2 class="text-secondary font-bold tracking-wide uppercase mb-2">Solusi Paradigma Baru</h2>
+                    <h3 class="text-3xl md:text-5xl font-bold mb-6">Mengenalkan <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400">NANO-CARIOMATRIX</span></h3>
+                    <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+                        Inovasi sediaan permen kenyal edukatif (<strong>Smart-Gummy</strong>) yang dirancang khusus dengan pendekatan psikologis ramah anak. Produk ini tidak membunuh semua bakteri, melainkan menargetkan jalur komunikasi patogen dengan presisi.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-sky-500/20 text-sky-400 rounded-full flex items-center justify-center text-xl mt-1">
+                                <i class="fa-solid fa-microscope"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Teknologi Nano-Enkapsulasi</h4>
+                                <p class="text-gray-400 mt-1">Matriks polimer berskala nano melindungi bahan aktif dari enzim saliva, memastikan pelepasan obat secara terkontrol (<i>sustained release</i>).</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-xl mt-1">
+                                <i class="fa-solid fa-child-reaching"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-xl font-bold">Pendekatan Anak-Anak</h4>
+                                <p class="text-gray-400 mt-1">Sediaan Gummy (permen kenyal) meningkatkan kepatuhan perawatan gigi preventif secara mandiri tanpa rasa takut.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mekanisme Kerja Section -->
+    <section id="mekanisme" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-primary font-bold tracking-wide uppercase mb-2">Cara Kerja Molekuler</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-dark mb-4">Terapi Mekanisme Ganda (Dual-Action)</h3>
+                <p class="text-gray-600 text-lg">Perpaduan dua keajaiban alam dari limbah lokal yang disempurnakan dengan bioteknologi.</p>
+            </div>
+
+            <!-- GAMBAR: mekanisme_kerja.png (Bisa dipakai sebagai gambar penjelas utama di tengah) -->
+            <div class="mb-16 rounded-2xl overflow-hidden shadow-xl mx-auto max-w-5xl">
+                 <img src="mekanisme_kerja.png" alt="Bagan Mekanisme Kerja" class="w-full h-auto" onerror="this.src='https://placehold.co/1000x400/e2e8f0/475569?text=mekanisme_kerja.png'">
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+                <!-- Mekanisme 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:border-primary transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-sky-50 rounded-bl-full -z-10"></div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-sky-400 to-primary text-white rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-md">
+                        <i class="fa-solid fa-comment-slash"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-dark mb-2">Inhibisi Quorum Sensing</h4>
+                    <p class="text-primary font-medium mb-4">Ekstrak Lektin Biji Nangka (Jacalin)</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Lektin bekerja secara cerdas memblokir reseptor adhesi bakteri <i>S. mutans</i>. Alih-alih membunuh secara acak, Lektin memutus jaringan komunikasi seluler bakteri sehingga mereka gagal berkoloni dan tidak bisa membentuk biofilm plak.
+                    </p>
+                </div>
+                
+                <!-- Mekanisme 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 hover:border-secondary transition duration-300 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-50 rounded-bl-full -z-10"></div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-emerald-400 to-secondary text-white rounded-2xl flex items-center justify-center text-3xl mb-6 shadow-md">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-dark mb-2">Remineralisasi Enamel</h4>
+                    <p class="text-secondary font-medium mb-4">Teobromin Kulit Kakao</p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Teobromin bertindak memfasilitasi pertukaran ion pada enamel gigi. Secara aktif merangsang pembentukan kristal hidroksiapatit baru yang membuat lapisan gigi anak menjadi jauh lebih kuat dan lebih tahan terhadap serangan asam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dampak & SDGs Section -->
+    <section id="dampak" class="py-24 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-secondary font-bold tracking-wide uppercase mb-2">Dampak Luas</h2>
+                <h3 class="text-3xl md:text-4xl font-bold text-dark mb-4">Berkontribusi pada Kehidupan & Lingkungan</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <!-- GAMBAR: ikon_klinis.png -->
+                    <img src="ikon_klinis.png" alt="Dampak Klinis" class="w-24 h-24 mx-auto mb-6 object-contain" onerror="this.src='https://placehold.co/150x150/0ea5e9/ffffff?text=ikon_klinis.png'">
+                    <h4 class="text-xl font-bold text-dark mb-3">Dampak Klinis</h4>
+                    <p class="text-gray-600">Reduksi signifikan pada karies pediatrik dengan jaminan keamanan absolut (bebas toksisitas sistemik).</p>
+                </div>
+                <div class="p-6">
+                    <!-- GAMBAR: ikon_sdg12.png -->
+                    <img src="ikon_sdg12.png" alt="Dampak Ekologi" class="w-24 h-24 mx-auto mb-6 object-contain" onerror="this.src='https://placehold.co/150x150/10b981/ffffff?text=ikon_sdg12.png'">
+                    <h4 class="text-xl font-bold text-dark mb-3">Ekologi & Ekonomi (SDG 12)</h4>
+                    <p class="text-gray-600">Menerapkan <i>Waste Valorization</i>. Menyerap limbah kulit kakao & biji nangka untuk memberdayakan petani lokal secara sirkuler ekonomi.</p>
+                </div>
+                <div class="p-6">
+                    <!-- GAMBAR: ikon_indonesia2045.png -->
+                    <img src="ikon_indonesia2045.png" alt="Generasi Emas" class="w-24 h-24 mx-auto mb-6 object-contain" onerror="this.src='https://placehold.co/150x150/f59e0b/ffffff?text=ikon_indo2045.png'">
+                    <h4 class="text-xl font-bold text-dark mb-3">Generasi Emas (SDG 3)</h4>
+                    <p class="text-gray-600">Menjaga kualitas tumbuh kembang, kognitif, dan nutrisi anak untuk menyongsong generasi unggul Indonesia Emas 2045.</p>
+                </div>
+            </div>
+
+            <!-- Model Pentahelix -->
+            <div class="mt-20 bg-blue-50 rounded-3xl p-8 lg:p-12 border border-blue-100 flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <!-- GAMBAR: pentahelix.png -->
+                    <img src="pentahelix.png" alt="Skema Pentahelix" class="w-full h-auto drop-shadow-lg rounded-xl" onerror="this.src='https://placehold.co/500x400/ffffff/0ea5e9?text=pentahelix.png'">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-dark mb-4">Sinergi Kolaborasi Pentahelix</h3>
+                    <p class="text-gray-600 mb-6">Mewujudkan ide menuju produk nyata melibatkan 5 pilar utama:</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-primary mr-3"></i> <strong>Akademisi:</strong> Riset & Optimasi Formulasi Nano</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-primary mr-3"></i> <strong>Pemerintah:</strong> Regulasi & Keamanan (BPOM & Kemenkes)</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-primary mr-3"></i> <strong>Industri Farmasi:</strong> Hilirisasi Produksi Massal</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-primary mr-3"></i> <strong>Masyarakat/Petani:</strong> Penyedia limbah, distribusi UKS/Klinik</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check-circle text-primary mr-3"></i> <strong>Media Massa:</strong> Kampanye literasi kesehatan mulut</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tim Peneliti Section -->
+    <section class="py-20 bg-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold mb-10">Diciptakan oleh Mahasiswa Inovatif</h2>
+            <div class="flex flex-col items-center justify-center gap-4">
+                <!-- GAMBAR: logo_um.png -->
+                <img src="logo_um.png" alt="Logo Universitas Negeri Malang" class="w-24 h-24 bg-white rounded-full p-2 mb-4" onerror="this.src='https://placehold.co/100x100/ffffff/1e293b?text=logo_um.png'">
+                <h3 class="text-xl font-bold text-primary">Universitas Negeri Malang</h3>
+                <p class="text-gray-400">Tim Kompetisi NBEC 2026 Bidang Biofarmasi dan Teknologi Kesehatan</p>
+                <div class="flex flex-wrap justify-center gap-6 mt-6">
+                    <div class="bg-gray-800 px-6 py-3 rounded-full border border-gray-700">
+                        <span class="font-semibold">Aulia Rahma Hanum</span> <span class="text-sm text-gray-400">(Ketua)</span>
+                    </div>
+                    <div class="bg-gray-800 px-6 py-3 rounded-full border border-gray-700">
+                        <span class="font-semibold">Halimatus Sa'diah</span> <span class="text-sm text-gray-400">(Anggota)</span>
+                    </div>
+                    <div class="bg-gray-800 px-6 py-3 rounded-full border border-gray-700">
+                        <span class="font-semibold">Titus Nanda Pratama</span> <span class="text-sm text-gray-400">(Anggota)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <i class="fa-solid fa-tooth text-2xl text-primary"></i>
+                <span class="font-bold text-xl tracking-tight text-white">NANO-<span class="text-primary">CARIOMATRIX</span></span>
+            </div>
+            <p class="text-gray-500 text-sm text-center md:text-left">
+                &copy; 2026 Hak Cipta Tim UM. Proposal National Biotechnology Essay Competition (NBEC).
+            </p>
+            <div class="flex space-x-4 mt-4 md:mt-0 text-gray-500">
+                <a href="#" class="hover:text-primary transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-primary transition"><i class="fa-regular fa-envelope text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
